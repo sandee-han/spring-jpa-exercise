@@ -12,7 +12,6 @@ import javax.persistence.Table;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "book2")
 public class Author {
     @Id
     private Long id;
