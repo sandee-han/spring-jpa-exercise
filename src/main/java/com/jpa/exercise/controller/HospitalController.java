@@ -20,6 +20,6 @@ public class HospitalController {
 
     @PostMapping("/{id}/reviews")
     public ResponseEntity<ReviewCreateResponse> get(@PathVariable Integer id, @RequestBody ReviewCreateRequest reviewCreateRequest) {
-        return ResponseEntity.ok().body(reviewService.add(reviewCreateRequest));
+        return ResponseEntity.ok().body(reviewService.createReview(reviewCreateRequest));
     }
 }

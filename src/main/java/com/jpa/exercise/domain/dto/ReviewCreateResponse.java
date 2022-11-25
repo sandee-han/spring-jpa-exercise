@@ -13,6 +13,7 @@ public class ReviewCreateResponse {
     private Long id;
     private String title;
     private String content;
-    private String userName;
+    private String patientName;
+    // 리뷰 등록이 잘 되었는지 담는 message
     private String message;
 }
